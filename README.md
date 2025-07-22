@@ -6,7 +6,7 @@ OR
 
 Deploy your own!
 
-## 🚀 Deploying to Render
+## Deploying to Render
 
 1. Fork this repo  
 2. Go to [Render.com](https://render.com) and create a new Web Service  
@@ -19,7 +19,7 @@ Deploy your own!
 
    ```bash
    gunicorn main:app
-✅ Include .env.example with required variables
+Include .env.example with required variables
 On Render:
 My Workspace > Manage > Environment > Environment Variables
 
@@ -31,6 +31,6 @@ Edit
 FLASK_KEY=your-secret-key
 DB_URI=postgresql://user:password@host:5432/dbname
 PYTHON_VERSION=3.12
-⚠️ Be sure the DB_URI starts with postgresql://, and the PYTHON_VERSION is below 3.13
+Be sure the DB_URI starts with postgresql://, and the PYTHON_VERSION is below 3.13
 
 Deploy!
