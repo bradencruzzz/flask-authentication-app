@@ -23,14 +23,14 @@ Include .env.example with required variables
 On Render:
 My Workspace > Manage > Environment > Environment Variables
 
-Make sure you add:
+### Required Environment Variables
 
--FLASK_KEY=your-secret-key
+In your Render dashboard under **Environment → Environment Variables**, add the following:
 
--DB_URI=postgresql://user:password@host:5432/dbname
-
--PYTHON_VERSION=3.12
-
-(Be sure the DB_URI starts with postgresql://, and the PYTHON_VERSION is below 3.13)
+- `FLASK_KEY` = your-secret-key  
+- `DB_URI` = postgresql://user:password@host:5432/dbname  
+  _(Make sure it begins with `postgresql://`)_
+- `PYTHON_VERSION` = 3.12  
+  _(Use a version below Python 3.13 or Render will fail during deployment)_
 
 Deploy!
