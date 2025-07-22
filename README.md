@@ -25,12 +25,9 @@ My Workspace > Manage > Environment > Environment Variables
 
 Make sure you add:
 
-env
-Copy
-Edit
-FLASK_KEY=your-secret-key
-DB_URI=postgresql://user:password@host:5432/dbname
-PYTHON_VERSION=3.12
-Be sure the DB_URI starts with postgresql://, and the PYTHON_VERSION is below 3.13
+-FLASK_KEY=your-secret-key
+-DB_URI=postgresql://user:password@host:5432/dbname
+-PYTHON_VERSION=3.12
+(Be sure the DB_URI starts with postgresql://, and the PYTHON_VERSION is below 3.13)
 
 Deploy!
