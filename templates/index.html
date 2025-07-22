@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron text-center bg-dark text-white py-5 mb-0">
+  {% if current_user.is_authenticated %}
+    <h1 class="display-4">Welcome back, {{ current_user.name }}! 👋</h1>
+    <p class="lead">You're already logged in. Head to the secrets page or download your file!</p>
+    <a class="btn btn-light btn-lg mt-3" href="{{ url_for('secrets') }}">Go to Secrets</a>
+  {% else %}
+    <h1 class="display-4">Welcome to Flask Auth!</h1>
+    <p class="lead" style="color: white;">Create an account or log in to access secret content and download exclusive resources.</p>
+    <a class="btn btn-success btn-lg mr-2" href="{{ url_for('register') }}">Register</a>
+    <a class="btn btn-outline-light btn-lg" href="{{ url_for('login') }}">Login</a>
+  {% endif %}
+</div>
+
+<div class="container-fluid bg-black text-white py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card bg-dark text-white shadow-sm border-light">
+        <div class="card-body">
+          <h3 class="card-title">Why Use This App?</h3>
+          <ul class="pl-3">
+            <li>🔐 Secure registration and login</li>
+            <li>📁 Access downloadable content</li>
+          </ul>
+          <p class="mt-3" style="color: white;">This is a learning project built with Flask, SQLAlchemy, and Flask-Login. Enjoy!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
